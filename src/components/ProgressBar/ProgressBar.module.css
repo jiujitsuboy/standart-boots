@@ -1,0 +1,23 @@
+.bar_container {
+    position: relative;
+    width: 100%;
+    border: 1px solid #ed05ba;
+    border-radius: 25px;
+    height: 15px;
+    padding: 0px;
+    margin-top: 10px;
+}
+
+.bar_progress {
+    background-color: #ed05ba;
+    border: none;
+    border-radius: 25px;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.bar_progress_value {
+    position: absolute;
+    left: 50%;
+}

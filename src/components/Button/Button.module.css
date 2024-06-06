@@ -1,0 +1,32 @@
+.button {
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    background-color: blueviolet;
+    color:white;
+    font-weight: bold;
+}
+
+.button:hover:enabled {
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: rgb(159, 113, 201);
+    color:white;
+}
+
+.button:enabled:active {
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: rgb(82, 10, 150);
+    color:white;
+}
+
+.button:disabled {
+    cursor: not-allowed;
+    border-radius: 15px;
+    background-color: #ccc;
+    border: 2px solid #ccc;
+}

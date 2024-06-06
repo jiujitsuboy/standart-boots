@@ -1,46 +1,60 @@
-# Getting Started with Create React App
+# Ball Lancher project
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Architecture
 
-In the project directory, you can run:
+This project consist in a simple SPA, constituted by:
 
-### `npm start`
+1. **Main page:** Responsable to gather all application components.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+2. **Canvas component:** Responsable for rendering the canvas where the animation it is going to be painted.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+3. **useCanvas:** React Hook, where all the drawing and calculation logic is stored
 
-### `npm test`
+4. **DomainContext:** React Context to share certain data and method though out the application components.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![image](screenshots/application.png)
 
-### `npm run build`
+## How to use it
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The application consist in two main sections:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Canvas for drawing the spinning arm and lanching the ball.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![image](screenshots/canvas.png)
 
-### `npm run eject`
+2. An action button that release the ball and reset the arm to start over again.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![image](screenshots/actionButton.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Engine specifications section, for specifing the torque, max speed and seconds to reach top speed of the tested engine.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![image](screenshots/engineSpecifications.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+4. Results section, where the Range of the through, angule and height are displayed.
 
-## Learn More
+![image](screenshots/CalculationResults.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+ As soon as the web page load, it start spinning the arm by accelerating from 0 toward the top speed configured for the specific engine.
+
+ When ever you hit the Launch button, the ball will be loose and the calculations are done.
+
+ ![image](screenshots/BallLaunched.png)
+
+ To start spinning the arm again, it is just a matter to hit again the button (now labeled Reset).
+
+ ![image](screenshots/BallSpinning.png)
+
+ When ever you start the engine (by clicking the Reset button), the parameters that are on the Engine specifications section will be pick up.
+
+By default the engine specifications are:
+
+**Torque:** 20 Nm
+**Top Speed:** 20 km/h
+**Second to Top Speed:** 10 seconds
+
+
+## Video demostration
+

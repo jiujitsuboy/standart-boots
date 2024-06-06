@@ -1,0 +1,56 @@
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+.launch_button {
+    text-align: center;
+    margin: 10px;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 10px
+}
+
+.round_box {
+    position: relative;
+    border: 1px solid;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.motor_specification {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-left: 5px;
+
+}
+
+.motor_specification>div {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+}
+
+
+.result {
+    width: 300px;
+}
+
+.result>div {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+    margin-left: 5px;
+}
+
+.round_box__legend {
+    position: absolute;
+    top: -10px;
+    background-color: rgba(0, 0, 0, 1);
+    padding: 0px 5px;
+}
