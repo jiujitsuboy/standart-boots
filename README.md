@@ -58,4 +58,4 @@ By default the engine specifications are:
 
 ## Video demostration
 
-[screenshots/demoVideo.mov](https://github.com/standardbots-candidate/take-home-jose-mora/blob/main/screenshots/demoVideo.mov)
+https://github.com/standardbots-candidate/take-home-jose-mora/blob/main/screenshots/demoVideo.mp4
