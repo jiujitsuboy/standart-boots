@@ -55,6 +55,33 @@ By default the engine specifications are:
 **Top Speed:** 20 km/h
 **Second to Top Speed:** 10 seconds
 
+## Physics Formulas
+
+For calculating the projectil motion I used the following formulas:
+
+* *For calculating speed:*
+
+      Vx = V.cos(angule)
+
+      Vy = V.sin(angule)
+
+* *Range of the projectile*
+
+                             _________________________
+                           \/  (Vo.sin(angule)^2 + 2gh
+      R = Vo.cos(angule).  ---------------------------
+                                       g
+
+Vo = Initial Velocity.
+angule = angule of release plus 90 degrees (because the ball is released not up but to the side, so 90 degrees added to the angule build between the arm and the x-axis)
+g = gravity constant (9.2 km/s^2)
+h = hight of release.
+
+### Material Weight
+
+For calculating the weight of the arm bar I used this webpage https://www.omnicalculator.com/construction/aluminum-weight
+
+For calculating the weight of the ball. I used this webpage https://www.onlinemetals.com/en/weight-calculator
 
 ## Video demostration
 
