@@ -75,7 +75,7 @@ For calculating the projectil motion I used the following formulas:
 Vo = Initial Velocity.
 angule = angule of release plus 90 degrees (because the ball is released not up but to the side, so 90 degrees added to the angule build between the arm and the x-axis)
 g = gravity constant (9.2 km/s^2)
-h = hight of release.
+h = hight of release.Can be 0 (when the ball is at 270 degrees) to 2 times the arm length (when the ball is at 90 degrees).
 
 ### Material Weight
 
