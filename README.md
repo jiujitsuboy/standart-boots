@@ -58,3 +58,4 @@ By default the engine specifications are:
 
 ## Video demostration
 
+screenshots/demoVideo.mov
